@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+html, body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+img {
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.body-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.personal-information {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin: auto; 
+    padding: 24px; 
+}
+
+.personal-information img {
+    border-radius: 15%;
+    margin: auto; 
+    padding: 12px; 
+}
+
+.social img {
+    width: 32px;
+    margin: 0;
+    padding: 5px; 
+    transition: transform 0.3s ease;
+}
+
+.social img:hover {
+    transform: scale(1.2);
+}
+
+.introducing {
+    display: block; 
+    padding: 12px;
+    margin: auto; 
+}
+
+.technologies-container {
+    display: flex; 
+    padding: 64px; 
+    margin: auto;
+    font-size: 24px; 
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    flex-direction: column;
+}
+.technologies-container img {
+    margin: auto; 
+    padding: 24px; 
+}
+
+.stack-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 32px;
+    margin: 0;
+}
+
+.stack-logos img {
+    width: 48px;
+    height: 48px;
+    margin: 8px;
+    transition: transform 0.3s ease;
+}
+
+.stack-logos img:hover {
+    transform: scale(1.2);
+}
+@media (max-width: 768px) {
+    html, body {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .body-container {
+        min-height: auto;
+        padding: 16px;
+    }
+
+    .personal-information {
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    .personal-information img {
+        width: 80%;
+        margin-bottom: 16px;
+    }
+
+    .social img {
+        width: 24px;
+        padding: 4px;
+    }
+
+    .introducing {
+        text-align: center;
+        padding: 8px;
+    }
+
+    .technologies-container {
+        flex-direction: column;
+        padding: 32px;
+        font-size: 18px;
+    }
+
+    .technologies-container img {
+        width: 40px;
+        padding: 16px;
+    }
+
+    .libraries {
+        padding-left: 0;
+    }
+}
