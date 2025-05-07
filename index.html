@@ -8,6 +8,16 @@
     </head>
     <body>
         <div class="body-container">
+            <header>
+                <nav>
+                    <button>
+                        <ion-icon id="night-mode" name="moon-outline" onclick="toggleDarkMode()"></ion-icon>
+                    </button>
+                    <button id="change-language">
+                        <ion-icon name="language-outline"></ion-icon>
+                    </button>
+                </nav>
+            </header>
                 <div class="introduction">
                     <div class="personal-information">
                         <img id="personal-photo" src="media/profile.jpeg" alt="Personal Photo" width="128" height="128">
@@ -29,6 +39,9 @@
                         </div>
                     </div>
                 </div>
+                <div id="projects">
+
+                </div>
                 <div class="technologies-container">
 
                     <h3>Technology stack</h3>
@@ -39,7 +52,11 @@
                             <img src="media/technologies/mongodb-logo.png" alt="MongoDB Logo">
                         </div>
                     </div>
+                    <p>Looking for mi projects? You may find these on <a style="color: cornflowerblue">Projects</a></p>
                 </div>
         </div>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="scripts/scripts.js"></script>
     </body>
 </html>
